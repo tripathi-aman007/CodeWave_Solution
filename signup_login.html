@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup/Login</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .form-container {
+        width: 400px;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .form-header {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+      }
+      .form-header button {
+        width: 50%;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #e9ecef;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .form-header button.active {
+        background-color: #e6bf55;
+        color: #ffffff;
+      }
+      .form-header button:focus {
+        outline: none;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+      }
+      input[type="email"],
+      input[type="password"],
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button[type="submit"] {
+        margin-top: 10px;
+        background-color: #e6bf55;
+        border-color: #e6bf55;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-header">
+        <button
+          id="loginBtn"
+          class="active btn btn-primary"
+          onclick="showLogin()"
+        >
+          Login
+        </button>
+        <button id="signupBtn" onclick="showSignup()">Signup</button>
+      </div>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="loginEmail"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="loginPassword"
+            placeholder="Password"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+      </form>
+
+      <form id="signupForm" style="display: none">
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="signupName"
+            placeholder="Enter full name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="signupCity">City</label>
+          <input
+            type="text"
+            class="form-control"
+            id="signupCity"
+            placeholder="Enter your city"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="signupMobile">Mobile</label>
+          <input
+            type="text"
+            class="form-control"
+            id="signupMobile"
+            placeholder="Enter your number"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="signupEmail"
+            placeholder="Enter email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="signupPassword"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Signup</button>
+      </form>
+    </div>
+
+    <script>
+      function showSignup() {
+        document.getElementById("loginForm").style.display = "none";
+        document.getElementById("signupForm").style.display = "block";
+        document.getElementById("loginBtn").classList.remove("active");
+        document.getElementById("signupBtn").classList.add("active");
+      }
+
+      function showLogin() {
+        document.getElementById("loginForm").style.display = "block";
+        document.getElementById("signupForm").style.display = "none";
+        document.getElementById("loginBtn").classList.add("active");
+        document.getElementById("signupBtn").classList.remove("active");
+      }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
