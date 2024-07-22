@@ -1,0 +1,64 @@
+body {
+  background: linear-gradient(to left, #f5d0a9, #e7b75f);
+  font-size: 18px;
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+.mainDiv {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .mainDiv {
+    flex-direction: row;
+  }
+}
+
+.project-section {
+  padding: 60px 0;
+}
+
+.project-card {
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+}
+
+.project-details {
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  color: #666;
+}
+
+.project-info {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #888;
+}

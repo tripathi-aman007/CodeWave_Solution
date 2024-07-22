@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeWave Solutions - EdTech Platform</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="aboutcss.css" />
+    <style>
+      .navbar-nav {
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body style="font-size: 18px;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand fw-bold"
+          style="font-family: cursive; color: orange"
+          href="index.html"
+          >CodeWave <span>Solutions</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="flase"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+            <li
+              class="nav-item dropdown"
+              onmouseover="showDropdown()"
+              onmouseout="hideDropdown()"
+            >
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="coursesDropdown"
+                role="button"
+                aria-expanded="false"
+              >
+                Courses
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="coursesDropdown"
+                id="coursesMenu"
+              >
+                <!-- Course 1 -->
+                <li>
+                  <a class="dropdown-item" href="javaFullStack.html"
+                    >Java Full Stack</a
+                  >
+                </li>
+                <!-- Course 2 -->
+                <li><a class="dropdown-item" href="ds.html">Data Science</a></li>
+                <!-- Course 3 -->
+                <li>
+                  <a class="dropdown-item" href="dA.html">Data Analytics</a>
+                </li>
+                <!-- Course 4 -->
+                <li>
+                  <a class="dropdown-item" href="pythonFullStack.html">Python Full Stack</a>
+                </li>
+                <!-- Course 5 -->
+                <li><a class="dropdown-item" href="mean.html">Mean Stack</a></li>
+                <!-- Course 6 -->
+                <li><a class="dropdown-item" href="mern.html">Mern Stack</a></li>
+                <!-- Add more courses as needed -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourTeam.html">Our Team</a>
+            </li>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 ml-0">
+              <li
+                class="nav-item dropdown ml-0"
+                onmouseover="showServices()"
+                onmouseout="hideServices()"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  Our Services
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="servicesDropdown"
+                  id="servicesMenu"
+                >
+                  <li>
+                    <a class="dropdown-item" href="corporateServices.html"
+                      >For Corporate</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="studentServices.html"
+                      >For Students</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-secondary fs-5 border-0" type="submit">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About us -->
+    <div class="container">
+      <div class="heading text-center mt-5 mb-5 fw-bold">
+        <p style="font-size: 40px;">About Us</p>
+      </div>
+      <div class="para mb-5">
+        <p class="text-center" style="font-family: 'Times New Roman', Times, serif;">
+          Discover <b>CodeWave Solution</b>, your gateway to success in the tech
+          world. With expert-led curriculum covering languages like C/C++, Java,
+          Python, and more, we bridge the gap between theory and practice. At
+          <b>CodeWave Solution</b>, it's not just about learning; it's about
+          doing. We offer <i>hands-on experience</i>,
+          <i>project-based learning</i>, and a focus on logic and
+          problem-solving. Our commitment doesn't stop at graduation; we provide
+          industry guidance, interview preparation, and 100% placement
+          assistance.
+        </p>
+        <p
+          class="text-center"
+          style="font-family: 'Times New Roman', Times, serif"
+        >
+          But we're not just an educational institution; we're your partner in
+          tech. From website design to application development, we offer IT
+          solutions for businesses and individuals alike. Join us at CodeWave
+          Solution, where you'll unlock your true potential and become a coding
+          expert ready for success in the ever-evolving tech industry.
+        </p>
+        <img src="aboutImg.jpeg" alt="" width="100%" />
+      </div>
+    </div>
+
+    <section class="course-gradient mb-4">
+        <div class="container">
+          <p class="mb-5 mt-4 text-dark text-center fw-bolder" style="font-size: 30px">
+            Our Mission
+          </p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center align-items-center px-5 mb-3">
+          <div class="px-5">
+            <p class="text-dark text-center" style="font-family: 'Times New Roman', Times, serif;">
+              At <b>CodeWave Solution</b>, our mission is clear: to provide accessible
+            and affordable courses that deliver the best content available. We
+            believe in the power of personalized learning, which is why we offer
+            one-on-one mentorship and dedicated doubt sessions to ensure every
+            student excels. Whether you prefer <b>online</b> or <b>offline learning</b>, we've
+            got you covered, offering flexibility to match your schedule and
+            preferences. But our commitment doesn't end with graduation; we're
+            here to support your journey every step of the way. <br>From <b>job
+            assistance</b> to <b>career guidance</b>, we're dedicated to helping you
+            navigate the tech industry with confidence. Our focus on skills
+            development ensures you're equipped for success, no matter where
+            your ambitions take you. With a vision to train students across
+            India, we aim to empower aspiring tech enthusiasts from every corner
+            of the country. Because at <b>CodeWave Solutions</b>, we're not just teaching coding
+            – we're investing in your future.
+            </p>
+          </div>
+          <div>
+            <img src="complete-the-mission.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Our Services -->
+    <section class="mb-5 mt-5">
+      <div class="container">
+        <p
+          class="mb-5 mt-4 text-dark text-center fw-bolder"
+          style="font-size: 30px"
+        >
+          Our Services
+        </p>
+      </div>
+
+      <div class="row mb-4">
+        <!-- first item -->
+        <div class="card col-12 d-flex flex-column align-items-center mb-4 border-0 shadow p-4">
+          <div>
+            <img
+              src="about-service-1.svg"
+              alt=""
+              class="img-fluid"
+              style="max-width: 100px"
+            />
+          </div>
+          <div class="text-center mt-3">
+            <p class="fw-bold mb-0" style="font-size: 20px">
+              Affordable online courses
+            </p>
+            <p class="text-muted">
+              Affordable online courses along with learning communities.
+            </p>
+          </div>
+        </div>
+        <!-- second item -->
+        <div class="card col-12 d-flex flex-column align-items-center mb-4 border-0 shadow p-4">
+          <div>
+            <img
+              src="about-service-2.svg"
+              alt=""
+              class="img-fluid"
+              style="max-width: 100px"
+            />
+          </div>
+          <div class="text-center mt-3">
+            <p class="fw-bold mb-0" style="font-size: 20px">
+              Best in Class/Industry Mentors
+            </p>
+            <p class="text-muted">
+              Mentors are Youtubers, digital entrepreneurs and content creators.
+            </p>
+          </div>
+        </div>
+        <!-- third item -->
+        <div class="col-12 d-flex flex-column align-items-center mb-4 border-0 shadow p-4">
+          <div>
+            <img
+              src="about-service-3.svg"
+              alt=""
+              class="img-fluid"
+              style="max-width: 100px"
+            />
+          </div>
+          <div class="text-center mt-3">
+            <p class="fw-bold mb-0" style="font-size: 20px">
+              Experience Portal
+            </p>
+            <p class="text-muted">
+              Affordable online courses along with learning communities.
+            </p>
+          </div>
+        </div>
+        <!-- fourth item -->
+        <div class="col-12 d-flex flex-column align-items-center mb-4 border-0 shadow p-4">
+          <div>
+            <img
+              src="about-service-4.svg"
+              alt=""
+              class="img-fluid"
+              style="max-width: 100px"
+            />
+          </div>
+          <div class="text-center mt-3">
+            <p class="fw-bold mb-0" style="font-size: 20px">
+              On-Demand Courses
+            </p>
+            <p class="text-muted">
+              Mentors are Youtubers, digital entrepreneurs and content creators.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+      <div class="container">
+        <div class="row align-items-center d-flex justify-content-evenly">
+          <div class="col-md-4">
+            <h3>About Us</h3>
+            <p>
+                Discover <b>CodeWave Solution</b>, your gateway to success in the tech
+          world. With expert-led curriculum covering languages like C/C++, Java,
+          Python, and more, we bridge the gap between theory and practice.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3>Connect With Us</h3>
+            <!-- Social media icons -->
+            <ul class="social-media">
+              <li>
+                <a class="text-white" 
+                href="https://www.linkedin.com/company/codewave-solution/" target="_blank"><i class="bi bi-linkedin"></i></a>
+              </li>
+              <li>
+                <a class="text-white" href="https://www.instagram.com/codewave_solution?igsh=ZG53Mmt3YWt2aTZ3" target="_blank"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a class="text-white" href="https://youtube.com/@codewavesolution?si=cRN9feFaMbyaam3K" target="_blank"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </li>
+              <!-- Add more social media icons as needed -->
+            </ul>
+            <!-- Contact information -->
+            <ul>
+              <li>Email: info@codewavesolution.in</li>
+              <li>Phone: +91 7827366246</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="script.js">
+      </scriptt>
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </body>
+</html>

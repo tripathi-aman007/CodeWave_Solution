@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeWave Solutions - Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="project.css" />
+
+    <style>
+      .container {
+        margin-top: 50px;
+      }
+
+      .project-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card-title {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .card-text {
+        color: #666;
+      }
+    </style>
+  </head>
+  <body style="font-size: 18px">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand fw-bold"
+          href="index.html"
+          style="font-family: cursive; color: orange"
+          >CodeWave Solutions</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+            <li
+              class="nav-item dropdown"
+              onmouseover="showDropdown()"
+              onmouseout="hideDropdown()"
+            >
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="coursesDropdown"
+                role="button"
+                aria-expanded="false"
+                >Courses</a
+              >
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="coursesDropdown"
+                id="coursesMenu"
+              >
+                <!-- Course list items -->
+                <li><a class="dropdown-item" href="javaFullStack.html">Java Full Stack</a></li>
+                <!-- Course 2 -->
+                <li><a class="dropdown-item" href="ds.html">Data Science</a></li>
+                <!-- Course 3 -->
+                <li>
+                  <a class="dropdown-item" href="dA.html">Data Analytics</a>
+                </li>
+                <!-- Course 4 -->
+                <li><a class="dropdown-item" href="pythonFullStack.html">Python Full Stack</a></li>
+                <!-- Course 5 -->
+                <li><a class="dropdown-item" href="mean.html">Mean Stack</a></li>
+                <!-- Course 6 -->
+                <li><a class="dropdown-item" href="mern.html">Mern Stack</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourTeam.html">Our Team</a>
+            </li>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 ml-0">
+              <li
+                class="nav-item dropdown ml-0"
+                onmouseover="showServices()"
+                onmouseout="hideServices()"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  Our Services
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="servicesDropdown"
+                  id="servicesMenu"
+                >
+                  <li>
+                    <a class="dropdown-item" href="corporateServices.html"
+                      >For Corporate</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="studentServices.html"
+                      >For Students</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-secondary fs-5 border-0" type="submit">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <div class="container">
+      <h2 class="text-center mt-3 mb-5 fw-bold" style="font-size: 34px">
+        Services for College Students
+      </h2>
+      <p class="text-center mb-5">
+        Student's can ask/send their queries by filling the form below. <br />
+        <b>If you have any other project in mind</b> : <a href="contact.html">Drop Your Project Deatils Here!</a>
+      </p>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card project-card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">
+                Various end-to-end projects related to web development.
+              </p>
+              <ol class="list-group">
+                <li class="list-group-item">
+                  <details>
+                    <summary>E-commerce Website</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Building a fully functional online store with user
+                      authentication, product listings, and payment integration.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Blogging Website</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Creating a content management system where users can
+                      publish articles, comment, and interact.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Blogging Website</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Designing a personal portfolio to showcase projects,
+                      skills, and experiences.
+                    </p>
+                  </details>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card project-card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Mobile App Development</h5>
+              <p class="card-text">
+                Various projects related to mobile app development.
+              </p>
+              <ol class="list-group">
+                <li class="list-group-item">
+                  <details>
+                    <summary>Chat Application</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Developing a real-time messaging app with features like
+                      group chats, media sharing, and notifications.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Fitness Tracker</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Creating an app to track physical activities, monitor
+                      health metrics, and set fitness goals.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Event Management</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Building an app for scheduling and managing events,
+                      including RSVP tracking and reminders.
+                    </p>
+                  </details>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card project-card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Data Science and Machine Learning</h5>
+              <p class="card-text">
+                Various projects related to data science and ML.
+              </p>
+              <ol class="list-group">
+                <li class="list-group-item">
+                  <details>
+                    <summary>Predictive Analytics</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Using machine learning to predict outcomes like house
+                      prices, stock prices, or customer churn.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Sentiment Analysis</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Analyzing social media posts or reviews to determine
+                      public sentiment using natural language processing.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Recommendation System</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Developing systems like those used by Netflix or Amazon to
+                      recommend movies, products, or content based on user
+                      behavior.
+                    </p>
+                  </details>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card project-card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Artificial Intelligence</h5>
+              <p class="card-text">
+                Various projects related to artificial Intelligence like AI
+                tools.
+              </p>
+              <ol class="list-group">
+                <li class="list-group-item">
+                  <details>
+                    <summary>Chatbots</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Creating AI-driven chatbots for customer service or
+                      personal assistants.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Image Recognition</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Building applications that can recognize and classify
+                      images, such as facial recognition systems.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Game AI</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Developing intelligent agents that can play games, learn
+                      strategies, and compete against humans or other AI.
+                    </p>
+                  </details>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!-- Add more columns for additional projects -->
+        <div class="col-md-4 mb-4">
+          <div class="card project-card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Software Development</h5>
+              <p class="card-text">
+                Various projects related to software development like management
+                systems.
+              </p>
+              <ol class="list-group">
+                <li class="list-group-item">
+                  <details>
+                    <summary>Inventory Management System</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Developing a system to track inventory levels, orders,
+                      sales, and deliveries.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Library Management System</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Creating software to manage book inventories, member
+                      registrations, and borrowing/returning processes.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Banking System</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Building a secure system to handle banking transactions,
+                      account management, and customer service.
+                    </p>
+                  </details>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card project-card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Networking and Security</h5>
+              <p class="card-text">
+                Various projects related to network and security domain.
+              </p>
+              <ol class="list-group">
+                <li class="list-group-item">
+                  <details>
+                    <summary>Firewall Development</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Creating software to protect networks from unauthorized
+                      access and threats.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Network Monitoring Tool</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Developing tools to monitor network traffic, performance,
+                      and identify potential issues.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Encryption Software</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Implementing cryptographic algorithms to secure data
+                      transmission and storage.
+                    </p>
+                  </details>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card project-card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Embedded Systems and IoT</h5>
+              <p class="card-text">
+                Various projects related to IoT applications and Monitoring
+                systems.
+              </p>
+              <ol class="list-group">
+                <li class="list-group-item">
+                  <details>
+                    <summary>Home Automation</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Building IoT devices to control home appliances remotely
+                      through mobile apps or voice commands.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Health Monitoring System</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Developing wearable devices to monitor vital signs and
+                      send data to healthcare providers.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Smart Agriculture</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Creating systems to monitor soil conditions, weather, and
+                      crop health to optimize farming practices.
+                    </p>
+                  </details>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card project-card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Database Management</h5>
+              <p class="card-text">
+                Various projects related to Database Management System.
+              </p>
+              <ol class="list-group">
+                <li class="list-group-item">
+                  <details>
+                    <summary>Student Information System</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Developing a database to manage student records, grades,
+                      and attendance.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Hospital Management System</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Creating a database system to manage patient records,
+                      appointments, and medical histories.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Online Voting System</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Building a secure database for managing voter registration
+                      and conducting elections online.
+                    </p>
+                  </details>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+      <div class="container">
+        <div class="row align-items-center d-flex justify-content-evenly">
+          <div class="col-md-4">
+            <h3>About Us</h3>
+            <p>
+                Discover <b>CodeWave Solution</b>, your gateway to success in the tech
+          world. With expert-led curriculum covering languages like C/C++, Java,
+          Python, and more, we bridge the gap between theory and practice.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3>Connect With Us</h3>
+            <!-- Social media icons -->
+            <ul class="social-media">
+              <li>
+                <a class="text-white" 
+                href="https://www.linkedin.com/company/codewave-solution/" target="_blank"><i class="bi bi-linkedin"></i></a>
+              </li>
+              <li>
+                <a class="text-white" href="https://www.instagram.com/codewave_solution?igsh=ZG53Mmt3YWt2aTZ3" target="_blank"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a class="text-white" href="https://youtube.com/@codewavesolution?si=cRN9feFaMbyaam3K" target="_blank"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </li>
+            </ul>
+            <!-- Contact information -->
+            <ul>
+              <li>Email: info@codewavesolution.in</li>
+              <li>Phone: +91 7827366246</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </body>
+</html>

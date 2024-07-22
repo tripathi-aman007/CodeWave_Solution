@@ -1,0 +1,65 @@
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.course-gradient {
+  background: linear-gradient(to left, #f5d0a9, #e7b75f);
+  padding: 40px 0;
+}
+
+.social-media {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between icons */
+}
+
+/* Style social media icons */
+.social-media a {
+  color: #000; /* Change icon color as needed */
+  font-size: 24px;
+}
+
+/* Change color of social media icons on hover */
+.social-media a:hover {
+  color: #ff8c00; /* Change to your desired hover color */
+}
+
+footer {
+  padding: 40px 0;
+}
+
+footer h3 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer ul li a:hover {
+  color: #ffcc80; /* Hover color remains the same as before */
+}

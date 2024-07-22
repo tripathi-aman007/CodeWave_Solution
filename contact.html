@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeWave Solutions - EdTech Platform</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="aboutcss.css" />
+    <style>
+      .navbar-nav {
+        margin: auto;
+      }
+      .mainDiv {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      @media (min-width: 768px) {
+        .mainDiv {
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body style="font-size: 18px">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand fw-bold"
+          style="font-family: cursive; color: orange"
+          href="index.html"
+          >CodeWave <span>Solutions</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="flase"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+            <li
+              class="nav-item dropdown"
+              onmouseover="showDropdown()"
+              onmouseout="hideDropdown()"
+            >
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="coursesDropdown"
+                role="button"
+                aria-expanded="false"
+              >
+                Courses
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="coursesDropdown"
+                id="coursesMenu"
+              >
+                <!-- Course 1 -->
+                <li>
+                  <a class="dropdown-item" href="javaFullStack.html"
+                    >Java Full Stack</a
+                  >
+                </li>
+                <!-- Course 2 -->
+                <li><a class="dropdown-item" href="ds.html">Data Science</a></li>
+                <!-- Course 3 -->
+                <li>
+                  <a class="dropdown-item" href="dA.html">Data Analytics</a>
+                </li>
+                <!-- Course 4 -->
+                <li>
+                  <a class="dropdown-item" href="pythonFullStack.html">Python Full Stack</a>
+                </li>
+                <!-- Course 5 -->
+                <li><a class="dropdown-item" href="mean.html">Mean Stack</a></li>
+                <!-- Course 6 -->
+                <li><a class="dropdown-item" href="mern.html">Mern Stack</a></li>
+                <!-- Add more courses as needed -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourTeam.html">Our Team</a>
+            </li>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 ml-0">
+              <li
+                class="nav-item dropdown ml-0"
+                onmouseover="showServices()"
+                onmouseout="hideServices()"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  Our Services
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="servicesDropdown"
+                  id="servicesMenu"
+                >
+                  <li>
+                    <a class="dropdown-item" href="corporateServices.html"
+                      >For Corporate</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="studentServices.html"
+                      >For Students</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-secondary fs-5 border-0" type="submit">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact -->
+    <div class="course-gradient d-flex justify-content-center">
+      <div class="container mainDiv p-5">
+        <div
+          class="leftDiv text-center text-md-left mb-5 mb-md-0"
+          style="font-family: 'Times New Roman', Times, serif"
+        >
+          <p class="fw-bold mb-5" style="font-size: 34px">Contact Us</p>
+          <p>
+            For any queries, Please reach out to us. Our Support team will get
+            back to you within 24 hours.
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope mr-2"></i>
+            <span>info@codewavesolution.in</span>
+          </p>
+          <p><i class="fa-solid fa-phone mr-2"></i> <span>+91 7827366246</span></p>
+          <img
+            src="contact.svg"
+            class="img-fluid"
+            style="mix-blend-mode: multiply"
+            alt=""
+          />
+        </div>
+        <div class="container mt-5">
+          <div class="card">
+            <div class="card-header bg-secondary text-white">
+              Contact Us / Registration
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullName"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email address"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="query" class="form-label">Query</label>
+                  <textarea
+                    class="form-control"
+                    id="query"
+                    rows="3"
+                    placeholder="Enter your query"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+      <div class="container">
+        <div class="row align-items-center d-flex justify-content-evenly">
+          <div class="col-md-4">
+            <h3>About Us</h3>
+            <p>
+                Discover <b>CodeWave Solution</b>, your gateway to success in the tech
+          world. With expert-led curriculum covering languages like C/C++, Java,
+          Python, and more, we bridge the gap between theory and practice.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3>Connect With Us</h3>
+            <!-- Social media icons -->
+            <ul class="social-media">
+              <li>
+                <a class="text-white" 
+                href="https://www.linkedin.com/company/codewave-solution/" target="_blank"><i class="bi bi-linkedin"></i></a>
+              </li>
+              <li>
+                <a class="text-white" href="https://www.instagram.com/codewave_solution?igsh=ZG53Mmt3YWt2aTZ3" target="_blank"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a class="text-white" href="https://youtube.com/@codewavesolution?si=cRN9feFaMbyaam3K" target="_blank"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </li>
+            </ul>
+            <!-- Contact information -->
+            <ul>
+              <li>Email: info@codewavesolution.in</li>
+              <li>Phone: +91 7827366246</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </body>
+</html>

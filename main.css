@@ -1,0 +1,122 @@
+.myBody {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.bg-gradient {
+  background: linear-gradient(to right, #2f43c449, #d5bfeb);
+  color: #fff;
+  padding: 50px 0;
+}
+
+#hero {
+  background: linear-gradient(45deg, #f0d2ad, #ed94ed 100%);
+}
+
+.overview {
+  padding: 50px 0;
+}
+
+.parent {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+.img i {
+  font-size: 3rem;
+  color: #007bff;
+}
+
+.text p:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.text p:last-child {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.course-gradient {
+  background: linear-gradient(to left, #f5d0a9, #e7b75f);
+  padding: 40px 0;
+}
+
+.course-category {
+  background: linear-gradient(to left, #f5d0a9, #e7b75f);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* All button takes gradient color scheme */
+.btn-primary {
+  background: linear-gradient(to right, #ff8c00, #800080);
+  border-color: transparent;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #ff6347, #8a2be2);
+  border-color: transparent;
+}
+
+/* Align social media icons horizontally */
+.social-media {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Style social media icons */
+.social-media a {
+  color: #000;
+  font-size: 24px;
+}
+
+/* Change color of social media icons on hover */
+.social-media a:hover {
+  color: #ff8c00;
+}
+
+footer {
+  padding: 40px 0;
+}
+
+footer h3 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer ul li a:hover {
+  color: #ffcc80; /* Hover color remains the same as before */
+}

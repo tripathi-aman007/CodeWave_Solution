@@ -1,0 +1,55 @@
+.navbar-nav {
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .mainDiv {
+    flex-direction: row;
+  }
+}
+
+.team-section {
+  padding: 60px 0;
+  background: linear-gradient(to left, #f5d0a9, #e7b75f);
+}
+
+.team-member {
+  margin-bottom: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.team-member img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.team-member h4 {
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #666;
+}
+
+.team-member .bio {
+  margin-bottom: 15px;
+}
+
+.team-member .skills {
+  font-size: 14px;
+  color: #666;
+}
+
+.social-icons a {
+  color: #333;
+  margin: 0 10px;
+  font-size: 18px;
+}
